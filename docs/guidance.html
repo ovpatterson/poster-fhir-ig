@@ -162,6 +162,28 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </div>
 <h1 id="general-guidance-and-definitions">General Guidance and Definitions</h1>
 
+<h2 id="flexible-data-model-for-multi-language-questionnaires">Flexible data model for multi-language questionnaires</h2>
+
+<p>Patient-generated data, such as patient-reported outcomes, intake forms, patient satisfaction, and clinical study surveys, are an essential aspect of clinical informatics research, and such data collection is frequently undertaken by clinicians, administrators, and researchers. Electronic data collection, enabled by the availability of mobile devices, is preferred over traditional paper-based methods due to its ability to enhance accuracy and efficiency. The adoption of a Fast Healthcare Interoperability Resources (FHIR) data collection model enables streamlined integration with existing FHIR stores utilized by healthcare or research organizations. This approach facilitates a seamless incorporation of patient-generated data into the healthcare ecosystem.</p>
+
+<p>Significant work has been done to define a data model to handle various use cases related to questionnaire data collection by the FHIR Infrastructure working group1. While the Structured Data Capture (SDC) FHIR Implementation Guide2 is fairly detailed, dealing with multi-language questionnaires has not been outlined. In cases when there is a need to administer surveys to a diverse cohort, developers have to accommodate delivering the content in the participants’ preferred language. This poster presents a FHIR data model and workflow for flexible display and data capture.</p>
+
+<h2 id="method">Method</h2>
+
+<p>The key to enabling multi-language capability in questionnaires is the utilization of the CodeSystem concept.designation.language element that allows specifying translations of the code to other human languages. The base definition of QuestionnaireResponse allows linking individual questions to codes specified in a code system. By combining the two notions - encoding questions and response options as codes in a custom code system and referring to questions in a questionnaire through codes - questionnaire designers would be able to create a single questionnaire that is flexible to be presented in any of the available languages.</p>
+
+<p>The SDC has introduced a method of collecting information called the task-based form solicitation approach. This approach uses a FHIR resource called Task to link the Questionnaire resource as input and the QuestionnaireResponse as output. When the task is initiated, the user interface has to have the ability to either get the patient’s language preference in the communication.language element of the Patient resource or inquire about the respondent’s language preference prior to displaying the questionnaire text. Then, the selected language preference could be used to configure terminology service queries to pull the applicable designation of the linked concept in Questionnaire.item.code and Questionnaire.item.answerValueSet. When the questions and other text are displayed in the selected language, the selected responses are stored as language-agnostic codes, so translation is only needed for free text entries. When the QuestionnaireResponse resource is created, the metadata language element could be populated with the language used to present the questionnaire, which would serve as an indicator of whether translation of free text entries is needed.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Electronic data collection methods and the adoption of FHIR-based data collection models are increasingly gaining popularity in the clinical informatics community as they promote accuracy, efficiency, and interoperability. The use of these methods is vital in ensuring the successful integration and utilization of patient-generated data to improve healthcare outcomes. The poster presents guidance to the implementers on how to approach questionnaire design targeting a diverse patient cohort. While the presented approach is relatively simple and is employing the base FHIR structured definitions, neither the base FHIR specification nor the specialized Structured Data Capture FHIR IG outline the presented approach for implementers. The described design is being implemented for data collection using mobile chatbots, and future work includes the analysis of ease of use for the developers of the surveys, translators, and survey participants.</p>
+
+<p>References</p>
+<ol>
+  <li>FHIR-I WorkGroup. https://confluence.hl7.org/pages/viewpage.action?pageId=40743450</li>
+  <li>Structured Data Capture (SDC) FHIR Implementation Guide. http://hl7.org/fhir/uv/sdc/</li>
+</ol>
+
 
 
 
@@ -187,7 +209,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://verily.com/">Olga Patterson</a>.  Package poster.fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 4, 2023 17:26-0500">2023-11-04</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://verily.com/">Olga Patterson</a>.  Package poster.fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 13, 2023 08:13-0600">2023-11-13</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
