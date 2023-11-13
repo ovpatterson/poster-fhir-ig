@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="questionnaire-example-code-system1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://fhir.example.com/CodeSystem/questionnaire-example-code-system1</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">current-meds<a name="questionnaire-example-code-system1-current-meds"> </a></td><td>Is the participant taking any of the following medications?</td></tr></table></div>
+  </text>
+  <url value="http://fhir.example.com/CodeSystem/questionnaire-example-code-system1"/>
+  <version value="1.0.0"/>
+  <name value="QuestionnaireExampleCodeSystem1"/>
+  <title value="Questionnaire Example Code System"/>
+  <status value="draft"/>
+  <date value="2023-10-16T15:43:11-05:00"/>
+  <publisher value="Olga Patterson"/>
+  <contact>
+    <name value="Olga Patterson"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://verily.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="opatterson@verily.com"/>
+    </telecom>
+  </contact>
+  <description value="Code system to illustrate multi-language questionnaire"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="current-meds"/>
+    <display value="Is the participant taking any of the following medications?"/>
+  </concept>
+</CodeSystem>

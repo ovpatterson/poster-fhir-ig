@@ -1,0 +1,109 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.example.com/Bundle/CodedQRExtractedBundle> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CodedQRExtractedBundle"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://example.com/base/MedicationStatement/currmeds"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/MedicationStatement/currmeds> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/base/Condition/hfcondition"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/Condition/hfcondition> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/base/Encounter/hfencounter"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/Encounter/hfencounter> )
+  ] ) . # 
+
+<https://example.com/base/MedicationStatement/currmeds> a fhir:MedicationStatement ;
+  fhir:id [ fhir:v "currmeds"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"currmeds\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;currmeds&quot; </p></div><p><b>identifier</b>: id: unique_row_id_1</p><p><b>status</b>: active</p><p><b>category</b>: Patient Specified <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-category.html\">Medication usage category codes</a>#patientspecified)</span></p><p><b>medication</b>: Enalapril <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"VerilyPatientProfileExample3\">VerilyPatientProfileExample3</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://www.verily.com/medstatement/row_id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "unique_row_id_1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/medication-statement-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "patientspecified" ]
+     ] )
+  ] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:text [ fhir:v "Enalapril" ]
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "VerilyPatientProfileExample3" ]
+  ] . # 
+
+<https://example.com/base/Condition/hfcondition> a fhir:Condition ;
+  fhir:id [ fhir:v "hfcondition"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"hfcondition\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;hfcondition&quot; </p></div><p><b>identifier</b>: id: unique_row_id_1</p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Heart failure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\">ICD-10</a>#i50)</span></p><p><b>subject</b>: <a href=\"VerilyPatientProfileExample3\">VerilyPatientProfileExample3</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://www.verily.com/condition/row_id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "unique_row_id_1" ]
+  ] ) ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://hl7.org/fhir/sid/icd-10"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "i50" ] ;
+       fhir:display [ fhir:v "Heart failure" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "VerilyPatientProfileExample3" ]
+  ] . # 
+
+<https://example.com/base/Encounter/hfencounter> a fhir:Encounter ;
+  fhir:id [ fhir:v "hfencounter"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"hfencounter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;hfencounter&quot; </p></div><p><b>identifier</b>: id: unique_row_id_1</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'null')</p><p><b>type</b>: Observation or inpatient hospital care for problems of moderate severity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99235)</span></p><p><b>subject</b>: <a href=\"VerilyPatientProfileExample3\">VerilyPatientProfileExample3</a></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Condition</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Condition_hfcondition\">See above (Condition/hfcondition)</a></td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://www.verily.com/encounter/row_id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "unique_row_id_1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "finished"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "IMP" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.ama-assn.org/go/cpt"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "99235" ] ;
+       fhir:display [ fhir:v "Observation or inpatient hospital care for problems of moderate severity" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "VerilyPatientProfileExample3" ]
+  ] ; # 
+  fhir:diagnosis ( [
+     fhir:condition [
+       fhir:link <http://fhir.example.com/Condition/hfcondition> ;
+       fhir:reference [ fhir:v "Condition/hfcondition" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

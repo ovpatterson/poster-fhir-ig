@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "medication-list-code-system1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://fhir.example.com/CodeSystem/medication-list-code-system1</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">benazepril<a name=\"medication-list-code-system1-benazepril\"> </a></td><td>Benazepril</td></tr><tr><td style=\"white-space:nowrap\">captopril<a name=\"medication-list-code-system1-captopril\"> </a></td><td>Captopril</td></tr><tr><td style=\"white-space:nowrap\">enalapril<a name=\"medication-list-code-system1-enalapril\"> </a></td><td>Enalapril</td></tr></table></div>"
+  },
+  "url" : "http://fhir.example.com/CodeSystem/medication-list-code-system1",
+  "version" : "1.0.0",
+  "name" : "MedicationListCodeSystem1",
+  "title" : "Medication List Code System",
+  "status" : "draft",
+  "date" : "2023-10-16T15:43:11-05:00",
+  "publisher" : "Olga Patterson",
+  "contact" : [{
+    "name" : "Olga Patterson",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://verily.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "opatterson@verily.com"
+    }]
+  }],
+  "description" : "Medication list options",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "benazepril",
+    "display" : "Benazepril"
+  },
+  {
+    "code" : "captopril",
+    "display" : "Captopril"
+  },
+  {
+    "code" : "enalapril",
+    "display" : "Enalapril"
+  }]
+}

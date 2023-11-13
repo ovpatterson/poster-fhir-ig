@@ -1,0 +1,314 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.example.com/Bundle/Bundle-IPASQF-input-example> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Bundle-IPASQF-input-example"] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "https://example.com/base/Observation/ipaqsf-Observation0"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/Observation/ipaqsf-Observation0> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/base/Observation/ipaqsf-Observation1"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/Observation/ipaqsf-Observation1> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/base/Observation/ipaqsf-Observation2"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/Observation/ipaqsf-Observation2> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/base/Observation/ipaqsf-Observation3"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/Observation/ipaqsf-Observation3> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/base/Observation/ipaqsf-Observation4"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/Observation/ipaqsf-Observation4> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/base/Observation/ipaqsf-Observation5"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/Observation/ipaqsf-Observation5> )
+  ] [
+     fhir:fullUrl [ fhir:v "https://example.com/base/Observation/ipaqsf-Observation6"^^xsd:anyURI ] ;
+     fhir:resource ( <https://example.com/base/Observation/ipaqsf-Observation6> )
+  ] ) . # 
+
+<https://example.com/base/Observation/ipaqsf-Observation0> a fhir:Observation ;
+  fhir:id [ fhir:v "ipaqsf-Observation0"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ipaqsf-Observation0\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ipaqsf-Observation0&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365922:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: The last question is about the time you spent &lt;b&gt;sitting&lt;/b&gt; on weekdays during the &lt;b&gt;last 7 days&lt;/b&gt;.  Include time spent at work, at home, while doing course work and during leisure time. This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television.&lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, how much time did you spend &lt;b&gt;sitting&lt;/b&gt; on a &lt;b&gt;week day&lt;/b&gt;? <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#223927-3:1.4.365922)</span></p><p><b>subject</b>: <a href=\"Patient/8992702016\">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 10 MINUTE</p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ\">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "QRSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ]
+  ] [
+     fhir:system [ fhir:v "QRItemSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "223927-3:1.4.365922:Observation:0" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "csp:Question.Option.value"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "223927-3:1.4.365922" ] ;
+       fhir:display [ fhir:v "The last question is about the time you spent <b>sitting</b> on weekdays during the <b>last 7 days</b>.  Include time spent at work, at home, while doing course work and during leisure time. This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television.<br><br>During the <b>last 7 days</b>, how much time did you spend <b>sitting</b> on a <b>week day</b>?" ]
+     ] ) ;
+     fhir:text [ fhir:v "The last question is about the time you spent <b>sitting</b> on weekdays during the <b>last 7 days</b>.  Include time spent at work, at home, while doing course work and during leisure time. This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television.<br><br>During the <b>last 7 days</b>, how much time did you spend <b>sitting</b> on a <b>week day</b>?" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.example.com/Patient/8992702016> ;
+     fhir:reference [ fhir:v "Patient/8992702016" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-06-21T05:48:53.070Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "MINUTE" ]
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://fhir.example.com/QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ] ;
+     fhir:type [ fhir:v "QuestionnaireResponse"^^xsd:anyURI ]
+  ] ) . # 
+
+<https://example.com/base/Observation/ipaqsf-Observation1> a fhir:Observation ;
+  fhir:id [ fhir:v "ipaqsf-Observation1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ipaqsf-Observation1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ipaqsf-Observation1&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365916:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you do &lt;b&gt;vigorous&lt;/b&gt; physical activities like heavy lifting, digging, aerobics, or fast bicycling? <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#223927-3:1.4.365916)</span></p><p><b>subject</b>: <a href=\"Patient/8992702016\">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 3 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#3)</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ\">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "QRSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ]
+  ] [
+     fhir:system [ fhir:v "QRItemSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "223927-3:1.4.365916:Observation:0" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "csp:Question.Option.value"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "223927-3:1.4.365916" ] ;
+       fhir:display [ fhir:v "During the <b>last 7 days</b>, on how many days did you do <b>vigorous</b> physical activities like heavy lifting, digging, aerobics, or fast bicycling?" ]
+     ] ) ;
+     fhir:text [ fhir:v "During the <b>last 7 days</b>, on how many days did you do <b>vigorous</b> physical activities like heavy lifting, digging, aerobics, or fast bicycling?" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.example.com/Patient/8992702016> ;
+     fhir:reference [ fhir:v "Patient/8992702016" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-06-21T05:48:53.070Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "csp:Question.Option.value:1.4.365916"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3" ]
+     ] )
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://fhir.example.com/QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ] ;
+     fhir:type [ fhir:v "QuestionnaireResponse"^^xsd:anyURI ]
+  ] ) . # 
+
+<https://example.com/base/Observation/ipaqsf-Observation2> a fhir:Observation ;
+  fhir:id [ fhir:v "ipaqsf-Observation2"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ipaqsf-Observation2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ipaqsf-Observation2&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365917:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: How much time did you usually spend doing &lt;b&gt;vigorous&lt;/b&gt; physical activities on one of those days?  <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#223927-3:1.4.365917)</span></p><p><b>subject</b>: <a href=\"Patient/8992702016\">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 5 MINUTE</p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ\">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "QRSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ]
+  ] [
+     fhir:system [ fhir:v "QRItemSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "223927-3:1.4.365917:Observation:0" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "csp:Question.Option.value"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "223927-3:1.4.365917" ] ;
+       fhir:display [ fhir:v "How much time did you usually spend doing <b>vigorous</b> physical activities on one of those days? " ]
+     ] ) ;
+     fhir:text [ fhir:v "How much time did you usually spend doing <b>vigorous</b> physical activities on one of those days? " ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.example.com/Patient/8992702016> ;
+     fhir:reference [ fhir:v "Patient/8992702016" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-06-21T05:48:53.070Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "5"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "MINUTE" ]
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://fhir.example.com/QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ] ;
+     fhir:type [ fhir:v "QuestionnaireResponse"^^xsd:anyURI ]
+  ] ) . # 
+
+<https://example.com/base/Observation/ipaqsf-Observation3> a fhir:Observation ;
+  fhir:id [ fhir:v "ipaqsf-Observation3"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ipaqsf-Observation3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ipaqsf-Observation3&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365920:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: Think about the time you spent &lt;b&gt;walking&lt;/b&gt; in the &lt;b&gt;last 7 days&lt;/b&gt;.  This includes at work and at home, walking to travel from place to place, and any other walking that you have done solely for recreation, sport, exercise, or leisure. &lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you &lt;b&gt;walk&lt;/b&gt; for at least 10 minutes at a time? <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#223927-3:1.4.365920)</span></p><p><b>subject</b>: <a href=\"Patient/8992702016\">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 3 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#3)</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ\">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "QRSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ]
+  ] [
+     fhir:system [ fhir:v "QRItemSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "223927-3:1.4.365920:Observation:0" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "csp:Question.Option.value"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "223927-3:1.4.365920" ] ;
+       fhir:display [ fhir:v "Think about the time you spent <b>walking</b> in the <b>last 7 days</b>.  This includes at work and at home, walking to travel from place to place, and any other walking that you have done solely for recreation, sport, exercise, or leisure. <br><br>During the <b>last 7 days</b>, on how many days did you <b>walk</b> for at least 10 minutes at a time?" ]
+     ] ) ;
+     fhir:text [ fhir:v "Think about the time you spent <b>walking</b> in the <b>last 7 days</b>.  This includes at work and at home, walking to travel from place to place, and any other walking that you have done solely for recreation, sport, exercise, or leisure. <br><br>During the <b>last 7 days</b>, on how many days did you <b>walk</b> for at least 10 minutes at a time?" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.example.com/Patient/8992702016> ;
+     fhir:reference [ fhir:v "Patient/8992702016" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-06-21T05:48:53.070Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "csp:Question.Option.value:1.4.365920"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "3" ]
+     ] )
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://fhir.example.com/QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ] ;
+     fhir:type [ fhir:v "QuestionnaireResponse"^^xsd:anyURI ]
+  ] ) . # 
+
+<https://example.com/base/Observation/ipaqsf-Observation4> a fhir:Observation ;
+  fhir:id [ fhir:v "ipaqsf-Observation4"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ipaqsf-Observation4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ipaqsf-Observation4&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365918:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: Think about all the &lt;b&gt;moderate&lt;/b&gt; activities that you did in the &lt;b&gt;last 7 days&lt;/b&gt;.  &lt;b&gt;Moderate&lt;/b&gt; activities refer to activities that take moderate physical effort and make you breathe somewhat harder than normal.  Think only about those physical activities that you did for at least 10 minutes at a time. &lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you do &lt;b&gt;moderate&lt;/b&gt; physical activities like carrying light loads, bicycling at a regular pace, or doubles tennis? Do not include walking. <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#223927-3:1.4.365918)</span></p><p><b>subject</b>: <a href=\"Patient/8992702016\">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#1)</span></p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ\">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "QRSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ]
+  ] [
+     fhir:system [ fhir:v "QRItemSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "223927-3:1.4.365918:Observation:0" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "csp:Question.Option.value"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "223927-3:1.4.365918" ] ;
+       fhir:display [ fhir:v "Think about all the <b>moderate</b> activities that you did in the <b>last 7 days</b>.  <b>Moderate</b> activities refer to activities that take moderate physical effort and make you breathe somewhat harder than normal.  Think only about those physical activities that you did for at least 10 minutes at a time. <br><br>During the <b>last 7 days</b>, on how many days did you do <b>moderate</b> physical activities like carrying light loads, bicycling at a regular pace, or doubles tennis? Do not include walking." ]
+     ] ) ;
+     fhir:text [ fhir:v "Think about all the <b>moderate</b> activities that you did in the <b>last 7 days</b>.  <b>Moderate</b> activities refer to activities that take moderate physical effort and make you breathe somewhat harder than normal.  Think only about those physical activities that you did for at least 10 minutes at a time. <br><br>During the <b>last 7 days</b>, on how many days did you do <b>moderate</b> physical activities like carrying light loads, bicycling at a regular pace, or doubles tennis? Do not include walking." ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.example.com/Patient/8992702016> ;
+     fhir:reference [ fhir:v "Patient/8992702016" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-06-21T05:48:53.070Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "csp:Question.Option.value:1.4.365918"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1" ]
+     ] )
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://fhir.example.com/QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ] ;
+     fhir:type [ fhir:v "QuestionnaireResponse"^^xsd:anyURI ]
+  ] ) . # 
+
+<https://example.com/base/Observation/ipaqsf-Observation5> a fhir:Observation ;
+  fhir:id [ fhir:v "ipaqsf-Observation5"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ipaqsf-Observation5\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ipaqsf-Observation5&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365921:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: How much time did you usually spend &lt;b&gt;walking&lt;/b&gt; on one of those days? <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#223927-3:1.4.365921)</span></p><p><b>subject</b>: <a href=\"Patient/8992702016\">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 10 MINUTE</p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ\">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "QRSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ]
+  ] [
+     fhir:system [ fhir:v "QRItemSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "223927-3:1.4.365921:Observation:0" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "csp:Question.Option.value"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "223927-3:1.4.365921" ] ;
+       fhir:display [ fhir:v "How much time did you usually spend <b>walking</b> on one of those days?" ]
+     ] ) ;
+     fhir:text [ fhir:v "How much time did you usually spend <b>walking</b> on one of those days?" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.example.com/Patient/8992702016> ;
+     fhir:reference [ fhir:v "Patient/8992702016" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-06-21T05:48:53.070Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "MINUTE" ]
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://fhir.example.com/QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ] ;
+     fhir:type [ fhir:v "QuestionnaireResponse"^^xsd:anyURI ]
+  ] ) . # 
+
+<https://example.com/base/Observation/ipaqsf-Observation6> a fhir:Observation ;
+  fhir:id [ fhir:v "ipaqsf-Observation6"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ipaqsf-Observation6\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ipaqsf-Observation6&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365922:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: The last question is about the time you spent &lt;b&gt;sitting&lt;/b&gt; on weekdays during the &lt;b&gt;last 7 days&lt;/b&gt;.  Include time spent at work, at home, while doing course work and during leisure time. This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television.&lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, how much time did you spend &lt;b&gt;sitting&lt;/b&gt; on a &lt;b&gt;week day&lt;/b&gt;? <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#223927-3:1.4.365922)</span></p><p><b>subject</b>: <a href=\"Patient/8992702016\">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 180 MINUTE</p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ\">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "QRSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ]
+  ] [
+     fhir:system [ fhir:v "QRItemSourceId"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "223927-3:1.4.365922:Observation:0" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "csp:Question.Option.value"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "223927-3:1.4.365922" ] ;
+       fhir:display [ fhir:v "The last question is about the time you spent <b>sitting</b> on weekdays during the <b>last 7 days</b>.  Include time spent at work, at home, while doing course work and during leisure time. This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television.<br><br>During the <b>last 7 days</b>, how much time did you spend <b>sitting</b> on a <b>week day</b>?" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.example.com/Patient/8992702016> ;
+     fhir:reference [ fhir:v "Patient/8992702016" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ]
+  ] ; # 
+  fhir:effective [ fhir:v "2023-06-21T05:48:53.070Z"^^xsd:dateTime] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "180"^^xsd:decimal ] ;
+     fhir:unit [ fhir:v "MINUTE" ]
+  ] ; # 
+  fhir:derivedFrom ( [
+     fhir:link <http://fhir.example.com/QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ> ;
+     fhir:reference [ fhir:v "QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ" ] ;
+     fhir:type [ fhir:v "QuestionnaireResponse"^^xsd:anyURI ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

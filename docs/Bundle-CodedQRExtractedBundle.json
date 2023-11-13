@@ -1,0 +1,100 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "CodedQRExtractedBundle",
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://example.com/base/MedicationStatement/currmeds",
+    "resource" : {
+      "resourceType" : "MedicationStatement",
+      "id" : "currmeds",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MedicationStatement</b><a name=\"currmeds\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MedicationStatement &quot;currmeds&quot; </p></div><p><b>identifier</b>: id:\u00a0unique_row_id_1</p><p><b>status</b>: active</p><p><b>category</b>: Patient Specified <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://hl7.org/fhir/R4/codesystem-medication-statement-category.html\">Medication usage category codes</a>#patientspecified)</span></p><p><b>medication</b>: Enalapril <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><p><b>subject</b>: <a href=\"VerilyPatientProfileExample3\">VerilyPatientProfileExample3</a></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://www.verily.com/medstatement/row_id",
+        "value" : "unique_row_id_1"
+      }],
+      "status" : "active",
+      "category" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+          "code" : "patientspecified"
+        }]
+      },
+      "medicationCodeableConcept" : {
+        "text" : "Enalapril"
+      },
+      "subject" : {
+        "reference" : "VerilyPatientProfileExample3"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://example.com/base/Condition/hfcondition",
+    "resource" : {
+      "resourceType" : "Condition",
+      "id" : "hfcondition",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"hfcondition\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;hfcondition&quot; </p></div><p><b>identifier</b>: id:\u00a0unique_row_id_1</p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis)</span></p><p><b>code</b>: Heart failure <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\">ICD-10</a>#i50)</span></p><p><b>subject</b>: <a href=\"VerilyPatientProfileExample3\">VerilyPatientProfileExample3</a></p></div>"
+      },
+      "identifier" : [{
+        "system" : "http://www.verily.com/condition/row_id",
+        "value" : "unique_row_id_1"
+      }],
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+          "code" : "encounter-diagnosis",
+          "display" : "Encounter Diagnosis"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/sid/icd-10",
+          "code" : "i50",
+          "display" : "Heart failure"
+        }]
+      },
+      "subject" : {
+        "reference" : "VerilyPatientProfileExample3"
+      }
+    }
+  },
+  {
+    "fullUrl" : "https://example.com/base/Encounter/hfencounter",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "hfencounter",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"hfencounter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;hfencounter&quot; </p></div><p><b>identifier</b>: id:\u00a0unique_row_id_1</p><p><b>status</b>: finished</p><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'null')</p><p><b>type</b>: Observation or inpatient hospital care for problems of moderate severity <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-CPT.html\">Current Procedural Terminology (CPT®)</a>#99235)</span></p><p><b>subject</b>: <a href=\"VerilyPatientProfileExample3\">VerilyPatientProfileExample3</a></p><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Condition</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"#Condition_hfcondition\">See above (Condition/hfcondition)</a></td></tr></table></div>"
+      },
+      "identifier" : [{
+        "system" : "http://www.verily.com/encounter/row_id",
+        "value" : "unique_row_id_1"
+      }],
+      "status" : "finished",
+      "class" : {
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "code" : "IMP"
+      },
+      "type" : [{
+        "coding" : [{
+          "system" : "http://www.ama-assn.org/go/cpt",
+          "code" : "99235",
+          "display" : "Observation or inpatient hospital care for problems of moderate severity"
+        }]
+      }],
+      "subject" : {
+        "reference" : "VerilyPatientProfileExample3"
+      },
+      "diagnosis" : [{
+        "condition" : {
+          "reference" : "Condition/hfcondition"
+        }
+      }]
+    }
+  }]
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="yes-no-idnotknow"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://example.org/CodeSystem/yes-no-idnotknow-code-system</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Spanish (es)</b></td></tr><tr><td style="white-space:nowrap">Y<a name="yes-no-idnotknow-Y"> </a></td><td>Yes</td><td>Yes</td><td>Sí</td></tr><tr><td style="white-space:nowrap">N<a name="yes-no-idnotknow-N"> </a></td><td>No</td><td>No</td><td>No</td></tr><tr><td style="white-space:nowrap">UNK<a name="yes-no-idnotknow-UNK"> </a></td><td>I do not know</td><td>I do not know</td><td>No lo sé</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/yes-no-idnotknow-code-system"/>
+  <version value="1.0.0"/>
+  <name value="YesNoIdontknowCs"/>
+  <title value="Code system for survey answers"/>
+  <status value="draft"/>
+  <date value="2023-11-04T17:26:31-05:00"/>
+  <publisher value="Olga Patterson"/>
+  <contact>
+    <name value="Olga Patterson"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://verily.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="opatterson@verily.com"/>
+    </telecom>
+  </contact>
+  <description value="Survey question answers"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Y"/>
+    <display value="Yes"/>
+    <definition value="Yes"/>
+    <designation>
+      <language value="es"/>
+      <value value="Sí"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="N"/>
+    <display value="No"/>
+    <definition value="No"/>
+    <designation>
+      <language value="es"/>
+      <value value="No"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="UNK"/>
+    <display value="I do not know"/>
+    <definition value="I do not know"/>
+    <designation>
+      <language value="es"/>
+      <value value="No lo sé"/>
+    </designation>
+  </concept>
+</CodeSystem>

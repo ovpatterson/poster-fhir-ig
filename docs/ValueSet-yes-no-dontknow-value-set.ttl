@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.example.com/ValueSet/yes-no-dontknow-value-set> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "yes-no-dontknow-value-set"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-yes-no-idnotknow-code-system-Y\"> </a>  <a href=\"CodeSystem-yes-no-idnotknow.html#yes-no-idnotknow-Y\">Y</a></td><td>http://example.org/CodeSystem/yes-no-idnotknow-code-system</td><td>Yes</td><td><div><p>Yes</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-yes-no-idnotknow-code-system-N\"> </a>  <a href=\"CodeSystem-yes-no-idnotknow.html#yes-no-idnotknow-N\">N</a></td><td>http://example.org/CodeSystem/yes-no-idnotknow-code-system</td><td>No</td><td><div><p>No</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-yes-no-idnotknow-code-system-UNK\"> </a>  <a href=\"CodeSystem-yes-no-idnotknow.html#yes-no-idnotknow-UNK\">UNK</a></td><td>http://example.org/CodeSystem/yes-no-idnotknow-code-system</td><td>I do not know</td><td><div><p>I do not know</p>\n</div></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Spanish (es)</b></td></tr><tr><td>Y</td><td>Sí</td></tr><tr><td>N</td><td>No</td></tr><tr><td>UNK</td><td>No lo sé</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/ValueSet/yes-no-dontknow-value-set"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "YesNoDontknowValueSet"] ; # 
+  fhir:title [ fhir:v "Survey answer set Yes/No/DontKnow"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-11-04T17:26:31-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Olga Patterson"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Olga Patterson" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://verily.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "opatterson@verily.com" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/yes-no-idnotknow-code-system"^^xsd:anyURI ]
+     ] )
+  ] ; # 
+  fhir:expansion [
+     fhir:contains ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/yes-no-idnotknow-code-system"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Y" ] ;
+       fhir:display [ fhir:v "Yes" ] ;
+       fhir:designation ( [
+         fhir:language [ fhir:v "es" ] ;
+         fhir:value [ fhir:v "Sí" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/yes-no-idnotknow-code-system"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "N" ] ;
+       fhir:display [ fhir:v "No" ] ;
+       fhir:designation ( [
+         fhir:language [ fhir:v "es" ] ;
+         fhir:value [ fhir:v "No" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/yes-no-idnotknow-code-system"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "UNK" ] ;
+       fhir:display [ fhir:v "I do not know" ] ;
+       fhir:designation ( [
+         fhir:language [ fhir:v "es" ] ;
+         fhir:value [ fhir:v "No lo sé" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

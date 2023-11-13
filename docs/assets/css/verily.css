@@ -1,0 +1,33 @@
+/* Styling based on go/verilybrands. */
+:root {
+  --navbar-bg-color: #583daa; /* 2. Header container color */
+  --footer-bg-color: #5f7c8a; /* 3. Footer background color*/
+  --footer-container-bg-color: #583daa; /* 4. Footer container color */
+  --btn-hover-color: #4527a0;  /* 6. Menu button hover color */
+}
+
+/* Generic settings common to all HL7 IGs. */
+:root {
+  --stripe-bg-color: #8fa3ad; /* 5. Header strip color */
+  --btn-active-color: #870d4e; /* 7. Menu button active color */
+  --btn-text-color: #e6e6e6; /* 8. Menu button text color */
+  --stu-note-background-color: #fff2ff; /* 19. (STU) Note box background color */
+  --stu-note-border-left-color: #ffa0ff; /* 20. (STU) Note box border color */
+}
+
+
+#verily-nav {
+  line-height: 50px;
+  float: left;
+  margin-top: 4px;
+  position: absolute;
+}
+
+#verily-nav a {
+  color: inherit;
+}
+
+#verily-logo {
+  float: left;
+  margin-left: 6px;
+}

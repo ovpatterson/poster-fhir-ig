@@ -1,0 +1,12 @@
+{
+  "url" : "http://fhir.example.com/ImplementationGuide/poster.fhir",
+  "name" : "PosterCore",
+  "package-id" : "poster.fhir",
+  "ig-ver" : "1.0.0",
+  "date" : "Sat, 04 Nov, 2023 17:26:31 -0500",
+  "errs" : 11,
+  "warnings" : 15,
+  "hints" : 15,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)"
+}

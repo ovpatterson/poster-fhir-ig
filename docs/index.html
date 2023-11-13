@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Home - Multi-language FHIR Implementation Guide v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/verily.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="verily-nav">
+          <a id="verily-logo" no-external="true" href="https://verily.com">
+            <img height="50" alt="Visit the Verily website" src="assets/images/verily_logo.png"/>
+          </a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Multi-language FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Guidance
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="guidance.html">General guidance</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Artifacts</a>
+  </li>
+  <li>
+    <a href="toc.html">Site map</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Home</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <p style="padding: 5px; border: 1px solid black; margin: 0; border-bottom: 0px; background-color: orange; color: black;">
+    Provide feedback on this page: <a href="https://github.com/verily-src/verily-fhir-ig/issues/new?template=feedback.md&title=Feedback: Home v1.0.0 (index.html)">File Feedback</a>
+  </p>
+</div>
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Multi-language FHIR Implementation Guide - Local Development build (v1.0.0). See the <a href="http://fhir.example.com/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Home</h2>
+  
+
+
+
+
+
+
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.example.com/ImplementationGuide/poster.fhir<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://fhir.example.com/ImplementationGuide/poster.fhir"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">1.0.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://fhir.example.com/ImplementationGuide/poster.fhir|1.0.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2023-11-04
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">PosterCore</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#boundary-and-relation" id="markdown-toc-boundary-and-relation">Boundary and relation</a></li>
+  <li><a href="#required-vs-recommended" id="markdown-toc-required-vs-recommended">Required vs Recommended</a></li>
+  <li><a href="#reading-guide" id="markdown-toc-reading-guide">Reading Guide</a></li>
+  <li><a href="#fhir-shorthand-resources" id="markdown-toc-fhir-shorthand-resources">FHIR Shorthand Resources</a></li>
+</ul>
+
+</div>
+<h3 id="introduction">Introduction</h3>
+
+<p>The Multi-language FHIR Implementation Guide is based on
+<a href="http://hl7.org/fhir/us/core/2022Jan/">US Core v4.1.0</a> ,
+<a href="http://hl7.org/fhir/R4/">FHIR R4</a>, and <a href="http://hl7.org/fhir/uv/sdc/">Structured Data Capture STU3</a>. 
+It defines FHIR
+<a href="https://www.hl7.org/fhir/profiling.html">profiles</a>,
+<a href="https://www.hl7.org/fhir/extensibility.html">extensions</a>, and additional guidance for FHIR data use within Verily products. 
+It aims to define a FHIR implementation that is useful for improving the efficiency, cost, and 
+clinical outcomes of healthcare delivery. It is maintained by Verily FHIR IG Council with contributions from various Verily teams.</p>
+
+<h3 id="boundary-and-relation">Boundary and relation</h3>
+
+<p>This IG is developed based on the FHIR USCore IG, with further restrictions and extensions for the Verily use cases. 
+ Nothing in this IG should contradict UScore or the standard FHIR specification, as it will jeopardize the  interoperability when Verily needs to exchange FHIR data with partners. This IG defines a set of FHIR resource profiles and their intended usage. However it does not prevent an implementer to use a resource that’s not profiled in this IG, as long as the use case can not be covered by the profiled resources. In general for any FHIR resource, implementers should seek requirements from this IG, then UScore, then standard FHIR specification.</p>
+
+<h3 id="required-vs-recommended">Required vs Recommended</h3>
+
+<p>Each FHIR resource can contain many elements based on the FHIR specification. FHIR defines the cardinality of each element in the format of (min..max), where min is a non-negative integer, and max is either a non-negative integer or “<em>”.  For example, a cardinality of (1..1) indicates the element is required (min=1), and can only have a single instance (max = 1), a cardinality of (0..</em>) indicates the element is not required (min=0), and can have as many instances as needed (max=*). For the resource profiles in this IG, if a resource element is labeled as “required”, then it means the cardinaily has min=1.</p>
+
+<p>FHIR itself does not have a notion of a “recommended” field, however, in a FHIR IG, a field can be specified as “must support”, meaning although the field could be missing, it must be supported when it is not missing. We specify “recommended” fields in the FHIR profiles, and use this to also imply that the implementation “must support” these fields.</p>
+
+<p>The general principles are: 
+If a field is required in FHIR standard or UScore, then it’s required in this IG.
+In addition, if a field is deemed important to almost all major Verily use cases (missing this field will make the data essentially unusable), then it is required.
+If a field is important only to certain use cases, it is deemed recommended.</p>
+
+<h4 id="required">Required</h4>
+
+<p>A required element is indicated by a minimum cardinality of <code class="language-plaintext highlighter-rouge">1</code> and the <code class="language-plaintext highlighter-rouge">MS</code> (Must
+Suppport) flag. If this element is missing then the FHIR resource becomes unusable.</p>
+
+<h4 id="recommended">Recommended</h4>
+
+<p>A recommended element has a minimum cardinality of <code class="language-plaintext highlighter-rouge">0</code> and the <code class="language-plaintext highlighter-rouge">MS</code> flag. If a
+resource does not provide all <code class="language-plaintext highlighter-rouge">MS</code> elements then it may result in degraded functionality or performance. In some situations the exact degradation will be described in the element definition.</p>
+
+<p>For background on cardinality and must support see:</p>
+<ul>
+  <li><a href="http://hl7.org/fhir/uv/shorthand/reference.html#cardinality-rules">Cardinality Rules</a>,</li>
+  <li><a href="http://hl7.org/fhir/uv/shorthand/reference.html#cardinality-rules">Flag Rules</a>, and</li>
+  <li><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">MustSupport</a>.</li>
+</ul>
+
+<h4 id="terminology-binding">Terminology Binding</h4>
+
+<p>Many resource elements have coded values, the resource profile specifies the value set that these elements should bind to. Each value set is a collection of codes from one or more code systems. There are different binding strength, namely required, extensible, preferred, and example. In this IG, we strive to use the UScore and FHIR standard valueset whenever available, especially when their binding strength is “required”.</p>
+
+<p>However, there are cases where FHIR and USCore only provide an “example” value set for a field which does not satisfy our needs, in which case we need to extend or define new value set/ code systems locally.</p>
+
+<p>FHIR requires that every code system and value set to have a canonical url which can be resolved to a webpage with clear definition and descriptions. For local code systems and value sets defined in this IG, we propose to use the following url convention:</p>
+
+<ul>
+  <li>http://fhir.verily.com/CodeSystem/[code_system_name]</li>
+  <li>http://fhir.verily.com/ValueSet/[value_set_name]</li>
+</ul>
+
+<h3 id="reading-guide">Reading Guide</h3>
+
+<p>This guide is broken into roughly 2 types of content:</p>
+
+<ul>
+  <li><strong>Guidance</strong>: These pages are recommended reading to understand key concepts and the overall data architecture.</li>
+  <li><strong>FHIR Artifacts</strong>: The FHIR specification for this IG containing profiles, value sets, code systems, and examples. This content serves as reference material and is not expected to be read exhaustively.</li>
+</ul>
+
+<p>The navigation menu at the top helps explore this content. An exhaustive list of all pages in this implementation guide can be found on the <a href="./toc.html">Table of Contents</a>.</p>
+
+<h3 id="fhir-shorthand-resources">FHIR Shorthand Resources</h3>
+
+<ul>
+  <li>
+    <p><a href="https://confluence.hl7.org/display/FHIRI/FHIR+Shorthand">HL7 Confluence site</a></p>
+  </li>
+  <li>
+    <p><a href="https://build.fhir.org/ig/HL7/fhir-shorthand">FHIR Shorthand Documentation</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/HL7/fhir-shorthand">FHIR Shorthand documentation code repository</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/FHIR/sushi">SUSHI code repository</a></p>
+  </li>
+  <li>
+    <p><a href="https://chat.fhir.org">Zulip</a> channel: #shorthand</p>
+  </li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://verily.com/">Olga Patterson</a>.  Package poster.fhir#1.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Nov 4, 2023 17:26-0500">2023-11-04</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "medication-list-value-set1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-medication-list-code-system1.html\"><code>http://fhir.example.com/CodeSystem/medication-list-code-system1</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.example.com/ValueSet/medication-list-value-set1",
+  "version" : "1.0.0",
+  "name" : "MedicationListValueSet1",
+  "title" : "Medication List Value set",
+  "status" : "draft",
+  "date" : "2023-10-16T15:43:11-05:00",
+  "publisher" : "Olga Patterson",
+  "contact" : [{
+    "name" : "Olga Patterson",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://verily.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "opatterson@verily.com"
+    }]
+  }],
+  "description" : "Example medication list options",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.example.com/CodeSystem/medication-list-code-system1"
+    }]
+  }
+}

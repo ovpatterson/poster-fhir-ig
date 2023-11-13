@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "questionnaire-example-code-system1",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://fhir.example.com/CodeSystem/questionnaire-example-code-system1</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">current-meds<a name=\"questionnaire-example-code-system1-current-meds\"> </a></td><td>Is the participant taking any of the following medications?</td></tr></table></div>"
+  },
+  "url" : "http://fhir.example.com/CodeSystem/questionnaire-example-code-system1",
+  "version" : "1.0.0",
+  "name" : "QuestionnaireExampleCodeSystem1",
+  "title" : "Questionnaire Example Code System",
+  "status" : "draft",
+  "date" : "2023-10-16T15:43:11-05:00",
+  "publisher" : "Olga Patterson",
+  "contact" : [{
+    "name" : "Olga Patterson",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://verily.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "opatterson@verily.com"
+    }]
+  }],
+  "description" : "Code system to illustrate multi-language questionnaire",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "current-meds",
+    "display" : "Is the participant taking any of the following medications?"
+  }]
+}

@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "yes-no-idnotknow",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://example.org/CodeSystem/yes-no-idnotknow-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Spanish (es)</b></td></tr><tr><td style=\"white-space:nowrap\">Y<a name=\"yes-no-idnotknow-Y\"> </a></td><td>Yes</td><td>Yes</td><td>Sí</td></tr><tr><td style=\"white-space:nowrap\">N<a name=\"yes-no-idnotknow-N\"> </a></td><td>No</td><td>No</td><td>No</td></tr><tr><td style=\"white-space:nowrap\">UNK<a name=\"yes-no-idnotknow-UNK\"> </a></td><td>I do not know</td><td>I do not know</td><td>No lo sé</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/yes-no-idnotknow-code-system",
+  "version" : "1.0.0",
+  "name" : "YesNoIdontknowCs",
+  "title" : "Code system for survey answers",
+  "status" : "draft",
+  "date" : "2023-11-04T17:26:31-05:00",
+  "publisher" : "Olga Patterson",
+  "contact" : [{
+    "name" : "Olga Patterson",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://verily.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "opatterson@verily.com"
+    }]
+  }],
+  "description" : "Survey question answers",
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "Y",
+    "display" : "Yes",
+    "definition" : "Yes",
+    "designation" : [{
+      "language" : "es",
+      "value" : "Sí"
+    }]
+  },
+  {
+    "code" : "N",
+    "display" : "No",
+    "definition" : "No",
+    "designation" : [{
+      "language" : "es",
+      "value" : "No"
+    }]
+  },
+  {
+    "code" : "UNK",
+    "display" : "I do not know",
+    "definition" : "I do not know",
+    "designation" : [{
+      "language" : "es",
+      "value" : "No lo sé"
+    }]
+  }]
+}

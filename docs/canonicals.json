@@ -1,0 +1,48 @@
+[
+  {
+    "id" : "fh-code-system",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/CodeSystem/fh-code-system",
+    "version" : "1.0.0",
+    "name" : "FamilyHistoryCodeSystem"
+  },
+  {
+    "id" : "yes-no-idnotknow",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/CodeSystem/yes-no-idnotknow-code-system",
+    "version" : "1.0.0",
+    "name" : "YesNoIdontknowCs"
+  },
+  {
+    "id" : "FHQuestionnaireExample",
+    "type" : "Questionnaire",
+    "url" : "http://example.org/Questionnaire/FHQuestionnaire",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "FHQuestionnaireExampleEnglish",
+    "type" : "Questionnaire",
+    "url" : "http://example.org/Questionnaire/FHQuestionnaireExampleEnglish",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "FHQuestionnaireExampleSpanish",
+    "type" : "Questionnaire",
+    "url" : "http://example.org/Questionnaire/FHQuestionnaireExampleSpanish",
+    "version" : "1.0.0"
+  },
+  {
+    "id" : "yes-no-dontknow-value-set",
+    "type" : "ValueSet",
+    "url" : "http://example.org/ValueSet/yes-no-dontknow-value-set",
+    "version" : "1.0.0",
+    "name" : "YesNoDontknowValueSet"
+  },
+  {
+    "id" : "poster.fhir",
+    "type" : "ImplementationGuide",
+    "url" : "http://fhir.example.com/ImplementationGuide/poster.fhir",
+    "version" : "1.0.0",
+    "name" : "PosterCore"
+  }
+]

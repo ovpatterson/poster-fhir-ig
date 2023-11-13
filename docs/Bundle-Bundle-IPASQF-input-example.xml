@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="Bundle-IPASQF-input-example"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://example.com/base/Observation/ipaqsf-Observation0"/>
+    <resource>
+      <Observation>
+        <id value="ipaqsf-Observation0"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ipaqsf-Observation0"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ipaqsf-Observation0&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365922:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: The last question is about the time you spent &lt;b&gt;sitting&lt;/b&gt; on weekdays during the &lt;b&gt;last 7 days&lt;/b&gt;.  Include time spent at work, at home, while doing course work and during leisure time. This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television.&lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, how much time did you spend &lt;b&gt;sitting&lt;/b&gt; on a &lt;b&gt;week day&lt;/b&gt;? <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#223927-3:1.4.365922)</span></p><p><b>subject</b>: <a href="Patient/8992702016">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 10 MINUTE</p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>
+        </text>
+        <identifier>
+          <system value="QRSourceId"/>
+          <value value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+        </identifier>
+        <identifier>
+          <system value="QRItemSourceId"/>
+          <value value="223927-3:1.4.365922:Observation:0"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="csp:Question.Option.value"/>
+            <code value="223927-3:1.4.365922"/>
+            <display value="The last question is about the time you spent &lt;b&gt;sitting&lt;/b&gt; on weekdays during the &lt;b&gt;last 7 days&lt;/b&gt;.  Include time spent at work, at home, while doing course work and during leisure time. This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television.&lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, how much time did you spend &lt;b&gt;sitting&lt;/b&gt; on a &lt;b&gt;week day&lt;/b&gt;?"/>
+          </coding>
+          <text value="The last question is about the time you spent &lt;b&gt;sitting&lt;/b&gt; on weekdays during the &lt;b&gt;last 7 days&lt;/b&gt;.  Include time spent at work, at home, while doing course work and during leisure time. This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television.&lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, how much time did you spend &lt;b&gt;sitting&lt;/b&gt; on a &lt;b&gt;week day&lt;/b&gt;?"/>
+        </code>
+        <subject>
+          <reference value="Patient/8992702016"/>
+          <type value="Patient"/>
+        </subject>
+        <effectiveDateTime value="2023-06-21T05:48:53.070Z"/>
+        <valueQuantity>
+          <value value="10"/>
+          <unit value="MINUTE"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+          <type value="QuestionnaireResponse"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.com/base/Observation/ipaqsf-Observation1"/>
+    <resource>
+      <Observation>
+        <id value="ipaqsf-Observation1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ipaqsf-Observation1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ipaqsf-Observation1&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365916:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you do &lt;b&gt;vigorous&lt;/b&gt; physical activities like heavy lifting, digging, aerobics, or fast bicycling? <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#223927-3:1.4.365916)</span></p><p><b>subject</b>: <a href="Patient/8992702016">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 3 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#3)</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>
+        </text>
+        <identifier>
+          <system value="QRSourceId"/>
+          <value value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+        </identifier>
+        <identifier>
+          <system value="QRItemSourceId"/>
+          <value value="223927-3:1.4.365916:Observation:0"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="csp:Question.Option.value"/>
+            <code value="223927-3:1.4.365916"/>
+            <display value="During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you do &lt;b&gt;vigorous&lt;/b&gt; physical activities like heavy lifting, digging, aerobics, or fast bicycling?"/>
+          </coding>
+          <text value="During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you do &lt;b&gt;vigorous&lt;/b&gt; physical activities like heavy lifting, digging, aerobics, or fast bicycling?"/>
+        </code>
+        <subject>
+          <reference value="Patient/8992702016"/>
+          <type value="Patient"/>
+        </subject>
+        <effectiveDateTime value="2023-06-21T05:48:53.070Z"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="csp:Question.Option.value:1.4.365916"/>
+            <code value="3"/>
+          </coding>
+        </valueCodeableConcept>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+          <type value="QuestionnaireResponse"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.com/base/Observation/ipaqsf-Observation2"/>
+    <resource>
+      <Observation>
+        <id value="ipaqsf-Observation2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ipaqsf-Observation2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ipaqsf-Observation2&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365917:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: How much time did you usually spend doing &lt;b&gt;vigorous&lt;/b&gt; physical activities on one of those days?  <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#223927-3:1.4.365917)</span></p><p><b>subject</b>: <a href="Patient/8992702016">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 5 MINUTE</p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>
+        </text>
+        <identifier>
+          <system value="QRSourceId"/>
+          <value value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+        </identifier>
+        <identifier>
+          <system value="QRItemSourceId"/>
+          <value value="223927-3:1.4.365917:Observation:0"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="csp:Question.Option.value"/>
+            <code value="223927-3:1.4.365917"/>
+            <display value="How much time did you usually spend doing &lt;b&gt;vigorous&lt;/b&gt; physical activities on one of those days? "/>
+          </coding>
+          <text value="How much time did you usually spend doing &lt;b&gt;vigorous&lt;/b&gt; physical activities on one of those days? "/>
+        </code>
+        <subject>
+          <reference value="Patient/8992702016"/>
+          <type value="Patient"/>
+        </subject>
+        <effectiveDateTime value="2023-06-21T05:48:53.070Z"/>
+        <valueQuantity>
+          <value value="5"/>
+          <unit value="MINUTE"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+          <type value="QuestionnaireResponse"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.com/base/Observation/ipaqsf-Observation3"/>
+    <resource>
+      <Observation>
+        <id value="ipaqsf-Observation3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ipaqsf-Observation3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ipaqsf-Observation3&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365920:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: Think about the time you spent &lt;b&gt;walking&lt;/b&gt; in the &lt;b&gt;last 7 days&lt;/b&gt;.  This includes at work and at home, walking to travel from place to place, and any other walking that you have done solely for recreation, sport, exercise, or leisure. &lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you &lt;b&gt;walk&lt;/b&gt; for at least 10 minutes at a time? <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#223927-3:1.4.365920)</span></p><p><b>subject</b>: <a href="Patient/8992702016">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 3 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#3)</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>
+        </text>
+        <identifier>
+          <system value="QRSourceId"/>
+          <value value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+        </identifier>
+        <identifier>
+          <system value="QRItemSourceId"/>
+          <value value="223927-3:1.4.365920:Observation:0"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="csp:Question.Option.value"/>
+            <code value="223927-3:1.4.365920"/>
+            <display value="Think about the time you spent &lt;b&gt;walking&lt;/b&gt; in the &lt;b&gt;last 7 days&lt;/b&gt;.  This includes at work and at home, walking to travel from place to place, and any other walking that you have done solely for recreation, sport, exercise, or leisure. &lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you &lt;b&gt;walk&lt;/b&gt; for at least 10 minutes at a time?"/>
+          </coding>
+          <text value="Think about the time you spent &lt;b&gt;walking&lt;/b&gt; in the &lt;b&gt;last 7 days&lt;/b&gt;.  This includes at work and at home, walking to travel from place to place, and any other walking that you have done solely for recreation, sport, exercise, or leisure. &lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you &lt;b&gt;walk&lt;/b&gt; for at least 10 minutes at a time?"/>
+        </code>
+        <subject>
+          <reference value="Patient/8992702016"/>
+          <type value="Patient"/>
+        </subject>
+        <effectiveDateTime value="2023-06-21T05:48:53.070Z"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="csp:Question.Option.value:1.4.365920"/>
+            <code value="3"/>
+          </coding>
+        </valueCodeableConcept>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+          <type value="QuestionnaireResponse"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.com/base/Observation/ipaqsf-Observation4"/>
+    <resource>
+      <Observation>
+        <id value="ipaqsf-Observation4"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ipaqsf-Observation4"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ipaqsf-Observation4&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365918:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: Think about all the &lt;b&gt;moderate&lt;/b&gt; activities that you did in the &lt;b&gt;last 7 days&lt;/b&gt;.  &lt;b&gt;Moderate&lt;/b&gt; activities refer to activities that take moderate physical effort and make you breathe somewhat harder than normal.  Think only about those physical activities that you did for at least 10 minutes at a time. &lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you do &lt;b&gt;moderate&lt;/b&gt; physical activities like carrying light loads, bicycling at a regular pace, or doubles tennis? Do not include walking. <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#223927-3:1.4.365918)</span></p><p><b>subject</b>: <a href="Patient/8992702016">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 1 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#1)</span></p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>
+        </text>
+        <identifier>
+          <system value="QRSourceId"/>
+          <value value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+        </identifier>
+        <identifier>
+          <system value="QRItemSourceId"/>
+          <value value="223927-3:1.4.365918:Observation:0"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="csp:Question.Option.value"/>
+            <code value="223927-3:1.4.365918"/>
+            <display value="Think about all the &lt;b&gt;moderate&lt;/b&gt; activities that you did in the &lt;b&gt;last 7 days&lt;/b&gt;.  &lt;b&gt;Moderate&lt;/b&gt; activities refer to activities that take moderate physical effort and make you breathe somewhat harder than normal.  Think only about those physical activities that you did for at least 10 minutes at a time. &lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you do &lt;b&gt;moderate&lt;/b&gt; physical activities like carrying light loads, bicycling at a regular pace, or doubles tennis? Do not include walking."/>
+          </coding>
+          <text value="Think about all the &lt;b&gt;moderate&lt;/b&gt; activities that you did in the &lt;b&gt;last 7 days&lt;/b&gt;.  &lt;b&gt;Moderate&lt;/b&gt; activities refer to activities that take moderate physical effort and make you breathe somewhat harder than normal.  Think only about those physical activities that you did for at least 10 minutes at a time. &lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, on how many days did you do &lt;b&gt;moderate&lt;/b&gt; physical activities like carrying light loads, bicycling at a regular pace, or doubles tennis? Do not include walking."/>
+        </code>
+        <subject>
+          <reference value="Patient/8992702016"/>
+          <type value="Patient"/>
+        </subject>
+        <effectiveDateTime value="2023-06-21T05:48:53.070Z"/>
+        <valueCodeableConcept>
+          <coding>
+            <system value="csp:Question.Option.value:1.4.365918"/>
+            <code value="1"/>
+          </coding>
+        </valueCodeableConcept>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+          <type value="QuestionnaireResponse"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.com/base/Observation/ipaqsf-Observation5"/>
+    <resource>
+      <Observation>
+        <id value="ipaqsf-Observation5"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ipaqsf-Observation5"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ipaqsf-Observation5&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365921:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: How much time did you usually spend &lt;b&gt;walking&lt;/b&gt; on one of those days? <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#223927-3:1.4.365921)</span></p><p><b>subject</b>: <a href="Patient/8992702016">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 10 MINUTE</p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>
+        </text>
+        <identifier>
+          <system value="QRSourceId"/>
+          <value value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+        </identifier>
+        <identifier>
+          <system value="QRItemSourceId"/>
+          <value value="223927-3:1.4.365921:Observation:0"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="csp:Question.Option.value"/>
+            <code value="223927-3:1.4.365921"/>
+            <display value="How much time did you usually spend &lt;b&gt;walking&lt;/b&gt; on one of those days?"/>
+          </coding>
+          <text value="How much time did you usually spend &lt;b&gt;walking&lt;/b&gt; on one of those days?"/>
+        </code>
+        <subject>
+          <reference value="Patient/8992702016"/>
+          <type value="Patient"/>
+        </subject>
+        <effectiveDateTime value="2023-06-21T05:48:53.070Z"/>
+        <valueQuantity>
+          <value value="10"/>
+          <unit value="MINUTE"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+          <type value="QuestionnaireResponse"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.com/base/Observation/ipaqsf-Observation6"/>
+    <resource>
+      <Observation>
+        <id value="ipaqsf-Observation6"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="ipaqsf-Observation6"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;ipaqsf-Observation6&quot; </p></div><p><b>identifier</b>: id: QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ, id: 223927-3:1.4.365922:Observation:0</p><p><b>status</b>: final</p><p><b>code</b>: The last question is about the time you spent &lt;b&gt;sitting&lt;/b&gt; on weekdays during the &lt;b&gt;last 7 days&lt;/b&gt;.  Include time spent at work, at home, while doing course work and during leisure time. This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television.&lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, how much time did you spend &lt;b&gt;sitting&lt;/b&gt; on a &lt;b&gt;week day&lt;/b&gt;? <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (unknown#223927-3:1.4.365922)</span></p><p><b>subject</b>: <a href="Patient/8992702016">Patient/8992702016</a></p><p><b>effective</b>: 2023-06-21 05:48:53+0000</p><p><b>value</b>: 180 MINUTE</p><p><b>derivedFrom</b>: <a href="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ">QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ</a></p></div>
+        </text>
+        <identifier>
+          <system value="QRSourceId"/>
+          <value value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+        </identifier>
+        <identifier>
+          <system value="QRItemSourceId"/>
+          <value value="223927-3:1.4.365922:Observation:0"/>
+        </identifier>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="csp:Question.Option.value"/>
+            <code value="223927-3:1.4.365922"/>
+            <display value="The last question is about the time you spent &lt;b&gt;sitting&lt;/b&gt; on weekdays during the &lt;b&gt;last 7 days&lt;/b&gt;.  Include time spent at work, at home, while doing course work and during leisure time. This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television.&lt;br&gt;&lt;br&gt;During the &lt;b&gt;last 7 days&lt;/b&gt;, how much time did you spend &lt;b&gt;sitting&lt;/b&gt; on a &lt;b&gt;week day&lt;/b&gt;?"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/8992702016"/>
+          <type value="Patient"/>
+        </subject>
+        <effectiveDateTime value="2023-06-21T05:48:53.070Z"/>
+        <valueQuantity>
+          <value value="180"/>
+          <unit value="MINUTE"/>
+        </valueQuantity>
+        <derivedFrom>
+          <reference value="QuestionnaireResponse/2ix31IiaRPiJ30Aj0LpOiQ"/>
+          <type value="QuestionnaireResponse"/>
+        </derivedFrom>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

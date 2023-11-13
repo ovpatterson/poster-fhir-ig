@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.example.com/CodeSystem/fh-code-system> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "fh-code-system"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://example.org/CodeSystem/fh-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Spanish (es)</b></td></tr><tr><td style=\"white-space:nowrap\">cancer<a name=\"fh-code-system-cancer\"> </a></td><td>Have your parents had cancer before age 50?</td><td>¿Tus padres tuvieron cáncer antes de los 50 años?</td></tr><tr><td style=\"white-space:nowrap\">diabetes<a name=\"fh-code-system-diabetes\"> </a></td><td>Has anyone in your family been diagnosed with diabetes?</td><td>¿Alguien en su familia ha sido diagnosticado con diabetes?</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/CodeSystem/fh-code-system"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "FamilyHistoryCodeSystem"] ; # 
+  fhir:title [ fhir:v "Family History survey code system"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-11-04T17:26:31-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Olga Patterson"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Olga Patterson" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://verily.com/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "opatterson@verily.com" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The code system for family health survey."] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "cancer" ] ;
+     fhir:display [ fhir:v "Have your parents had cancer before age 50?" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "es" ] ;
+       fhir:value [ fhir:v "¿Tus padres tuvieron cáncer antes de los 50 años?" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "diabetes" ] ;
+     fhir:display [ fhir:v "Has anyone in your family been diagnosed with diabetes?" ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "es" ] ;
+       fhir:value [ fhir:v "¿Alguien en su familia ha sido diagnosticado con diabetes?" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

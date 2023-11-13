@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="medication-list-value-set1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-medication-list-code-system1.html"><code>http://fhir.example.com/CodeSystem/medication-list-code-system1</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.example.com/ValueSet/medication-list-value-set1"/>
+  <version value="1.0.0"/>
+  <name value="MedicationListValueSet1"/>
+  <title value="Medication List Value set"/>
+  <status value="draft"/>
+  <date value="2023-10-16T15:43:11-05:00"/>
+  <publisher value="Olga Patterson"/>
+  <contact>
+    <name value="Olga Patterson"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://verily.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="opatterson@verily.com"/>
+    </telecom>
+  </contact>
+  <description value="Example medication list options"/>
+  <compose>
+    <include>
+      <system value="http://fhir.example.com/CodeSystem/medication-list-code-system1"/>
+    </include>
+  </compose>
+</ValueSet>

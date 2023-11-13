@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="yes-no-dontknow-value-set"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set contains 3 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---example.org-CodeSystem-yes-no-idnotknow-code-system-Y"> </a>  <a href="CodeSystem-yes-no-idnotknow.html#yes-no-idnotknow-Y">Y</a></td><td>http://example.org/CodeSystem/yes-no-idnotknow-code-system</td><td>Yes</td><td><div><p>Yes</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---example.org-CodeSystem-yes-no-idnotknow-code-system-N"> </a>  <a href="CodeSystem-yes-no-idnotknow.html#yes-no-idnotknow-N">N</a></td><td>http://example.org/CodeSystem/yes-no-idnotknow-code-system</td><td>No</td><td><div><p>No</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---example.org-CodeSystem-yes-no-idnotknow-code-system-UNK"> </a>  <a href="CodeSystem-yes-no-idnotknow.html#yes-no-idnotknow-UNK">UNK</a></td><td>http://example.org/CodeSystem/yes-no-idnotknow-code-system</td><td>I do not know</td><td><div><p>I do not know</p>
+</div></td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Spanish (es)</b></td></tr><tr><td>Y</td><td>Sí</td></tr><tr><td>N</td><td>No</td></tr><tr><td>UNK</td><td>No lo sé</td></tr></table></div>
+  </text>
+  <url value="http://example.org/ValueSet/yes-no-dontknow-value-set"/>
+  <version value="1.0.0"/>
+  <name value="YesNoDontknowValueSet"/>
+  <title value="Survey answer set Yes/No/DontKnow"/>
+  <status value="draft"/>
+  <date value="2023-11-04T17:26:31-05:00"/>
+  <publisher value="Olga Patterson"/>
+  <contact>
+    <name value="Olga Patterson"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://verily.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="opatterson@verily.com"/>
+    </telecom>
+  </contact>
+  <compose>
+    <include>
+      <system value="http://example.org/CodeSystem/yes-no-idnotknow-code-system"/>
+    </include>
+  </compose>
+  <expansion>
+    <contains>
+      <system value="http://example.org/CodeSystem/yes-no-idnotknow-code-system"/>
+      <code value="Y"/>
+      <display value="Yes"/>
+      <designation>
+        <language value="es"/>
+        <value value="Sí"/>
+      </designation>
+    </contains>
+    <contains>
+      <system value="http://example.org/CodeSystem/yes-no-idnotknow-code-system"/>
+      <code value="N"/>
+      <display value="No"/>
+      <designation>
+        <language value="es"/>
+        <value value="No"/>
+      </designation>
+    </contains>
+    <contains>
+      <system value="http://example.org/CodeSystem/yes-no-idnotknow-code-system"/>
+      <code value="UNK"/>
+      <display value="I do not know"/>
+      <designation>
+        <language value="es"/>
+        <value value="No lo sé"/>
+      </designation>
+    </contains>
+  </expansion>
+</ValueSet>

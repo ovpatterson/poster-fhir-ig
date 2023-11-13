@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fh-code-system"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://example.org/CodeSystem/fh-code-system</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Spanish (es)</b></td></tr><tr><td style="white-space:nowrap">cancer<a name="fh-code-system-cancer"> </a></td><td>Have your parents had cancer before age 50?</td><td>¿Tus padres tuvieron cáncer antes de los 50 años?</td></tr><tr><td style="white-space:nowrap">diabetes<a name="fh-code-system-diabetes"> </a></td><td>Has anyone in your family been diagnosed with diabetes?</td><td>¿Alguien en su familia ha sido diagnosticado con diabetes?</td></tr></table></div>
+  </text>
+  <url value="http://example.org/CodeSystem/fh-code-system"/>
+  <version value="1.0.0"/>
+  <name value="FamilyHistoryCodeSystem"/>
+  <title value="Family History survey code system"/>
+  <status value="draft"/>
+  <date value="2023-11-04T17:26:31-05:00"/>
+  <publisher value="Olga Patterson"/>
+  <contact>
+    <name value="Olga Patterson"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://verily.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="opatterson@verily.com"/>
+    </telecom>
+  </contact>
+  <description value="The code system for family health survey."/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="cancer"/>
+    <display value="Have your parents had cancer before age 50?"/>
+    <designation>
+      <language value="es"/>
+      <value value="¿Tus padres tuvieron cáncer antes de los 50 años?"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="diabetes"/>
+    <display value="Has anyone in your family been diagnosed with diabetes?"/>
+    <designation>
+      <language value="es"/>
+      <value value="¿Alguien en su familia ha sido diagnosticado con diabetes?"/>
+    </designation>
+  </concept>
+</CodeSystem>

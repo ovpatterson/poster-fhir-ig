@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fh-code-system",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://example.org/CodeSystem/fh-code-system</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Spanish (es)</b></td></tr><tr><td style=\"white-space:nowrap\">cancer<a name=\"fh-code-system-cancer\"> </a></td><td>Have your parents had cancer before age 50?</td><td>¿Tus padres tuvieron cáncer antes de los 50 años?</td></tr><tr><td style=\"white-space:nowrap\">diabetes<a name=\"fh-code-system-diabetes\"> </a></td><td>Has anyone in your family been diagnosed with diabetes?</td><td>¿Alguien en su familia ha sido diagnosticado con diabetes?</td></tr></table></div>"
+  },
+  "url" : "http://example.org/CodeSystem/fh-code-system",
+  "version" : "1.0.0",
+  "name" : "FamilyHistoryCodeSystem",
+  "title" : "Family History survey code system",
+  "status" : "draft",
+  "date" : "2023-11-04T17:26:31-05:00",
+  "publisher" : "Olga Patterson",
+  "contact" : [{
+    "name" : "Olga Patterson",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://verily.com/"
+    },
+    {
+      "system" : "email",
+      "value" : "opatterson@verily.com"
+    }]
+  }],
+  "description" : "The code system for family health survey.",
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "cancer",
+    "display" : "Have your parents had cancer before age 50?",
+    "designation" : [{
+      "language" : "es",
+      "value" : "¿Tus padres tuvieron cáncer antes de los 50 años?"
+    }]
+  },
+  {
+    "code" : "diabetes",
+    "display" : "Has anyone in your family been diagnosed with diabetes?",
+    "designation" : [{
+      "language" : "es",
+      "value" : "¿Alguien en su familia ha sido diagnosticado con diabetes?"
+    }]
+  }]
+}

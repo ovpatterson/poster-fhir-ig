@@ -1,0 +1,8 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-poster.fhir.json	2717	-	0	0	0	0	0	0	7	742	0	0	0	0	0	0	0	1	0	0	174	202	0	0	0	1	5	0	1
+fsh-generated/resources/ValueSet-yes-no-dontknow-value-set.json	1219	13	0	0	0	0	0	0	0	175	0	0	0	0	0	0	0	0	0	0	23	6734	0	0	1	0	1	0	0
+fsh-generated/resources/CodeSystem-fh-code-system.json	873	10	0	0	0	0	0	0	1	17	0	0	0	0	0	0	0	0	0	0	16	113	0	0	0	0	0	0	0
+fsh-generated/resources/Questionnaire-FHQuestionnaireExampleSpanish.json	2836	14	0	0	0	0	0	0	1	63	0	0	0	0	0	0	0	0	0	0	61	171	0	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-yes-no-idnotknow.json	918	11	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	14	86	0	0	0	0	1	0	0
+fsh-generated/resources/Questionnaire-FHQuestionnaireExample.json	3389	17	0	0	0	0	0	0	0	22	0	0	0	0	0	0	0	0	0	0	59	163	0	0	0	0	1	0	0
+fsh-generated/resources/Questionnaire-FHQuestionnaireExampleEnglish.json	2622	13	1	0	0	0	0	0	0	21	0	0	0	0	0	0	0	0	0	0	60	100	0	0	0	0	2	0	0

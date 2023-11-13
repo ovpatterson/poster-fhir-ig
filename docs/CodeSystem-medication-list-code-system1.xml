@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="medication-list-code-system1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>http://fhir.example.com/CodeSystem/medication-list-code-system1</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">benazepril<a name="medication-list-code-system1-benazepril"> </a></td><td>Benazepril</td></tr><tr><td style="white-space:nowrap">captopril<a name="medication-list-code-system1-captopril"> </a></td><td>Captopril</td></tr><tr><td style="white-space:nowrap">enalapril<a name="medication-list-code-system1-enalapril"> </a></td><td>Enalapril</td></tr></table></div>
+  </text>
+  <url value="http://fhir.example.com/CodeSystem/medication-list-code-system1"/>
+  <version value="1.0.0"/>
+  <name value="MedicationListCodeSystem1"/>
+  <title value="Medication List Code System"/>
+  <status value="draft"/>
+  <date value="2023-10-16T15:43:11-05:00"/>
+  <publisher value="Olga Patterson"/>
+  <contact>
+    <name value="Olga Patterson"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://verily.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="opatterson@verily.com"/>
+    </telecom>
+  </contact>
+  <description value="Medication list options"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="benazepril"/>
+    <display value="Benazepril"/>
+  </concept>
+  <concept>
+    <code value="captopril"/>
+    <display value="Captopril"/>
+  </concept>
+  <concept>
+    <code value="enalapril"/>
+    <display value="Enalapril"/>
+  </concept>
+</CodeSystem>

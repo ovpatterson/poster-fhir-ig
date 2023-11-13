@@ -1,0 +1,66 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "3234beea-4526-4435-9ea5-d98d52db854f",
+  "meta" : {
+    "lastUpdated" : "2023-11-04T17:26:31.034-05:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.org/ValueSet/yes-no-dontknow-value-set",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "yes-no-dontknow-value-set",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-yes-no-idnotknow-code-system-Y\"> </a>\u00a0\u00a0<a href=\"CodeSystem-yes-no-idnotknow.html#yes-no-idnotknow-Y\">Y</a></td><td>http://example.org/CodeSystem/yes-no-idnotknow-code-system</td><td>Yes</td><td><div><p>Yes</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-yes-no-idnotknow-code-system-N\"> </a>\u00a0\u00a0<a href=\"CodeSystem-yes-no-idnotknow.html#yes-no-idnotknow-N\">N</a></td><td>http://example.org/CodeSystem/yes-no-idnotknow-code-system</td><td>No</td><td><div><p>No</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---example.org-CodeSystem-yes-no-idnotknow-code-system-UNK\"> </a>\u00a0\u00a0<a href=\"CodeSystem-yes-no-idnotknow.html#yes-no-idnotknow-UNK\">UNK</a></td><td>http://example.org/CodeSystem/yes-no-idnotknow-code-system</td><td>I do not know</td><td><div><p>I do not know</p>\n</div></td></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Spanish (es)</b></td></tr><tr><td>Y</td><td>Sí</td></tr><tr><td>N</td><td>No</td></tr><tr><td>UNK</td><td>No lo sé</td></tr></table></div>"
+      },
+      "url" : "http://example.org/ValueSet/yes-no-dontknow-value-set",
+      "version" : "1.0.0",
+      "name" : "YesNoDontknowValueSet",
+      "title" : "Survey answer set Yes/No/DontKnow",
+      "status" : "draft",
+      "date" : "2023-11-04T17:26:31-05:00",
+      "publisher" : "Olga Patterson",
+      "contact" : [{
+        "name" : "Olga Patterson",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://verily.com/"
+        },
+        {
+          "system" : "email",
+          "value" : "opatterson@verily.com"
+        }]
+      }],
+      "expansion" : {
+        "contains" : [{
+          "system" : "http://example.org/CodeSystem/yes-no-idnotknow-code-system",
+          "code" : "Y",
+          "display" : "Yes",
+          "designation" : [{
+            "language" : "es",
+            "value" : "Sí"
+          }]
+        },
+        {
+          "system" : "http://example.org/CodeSystem/yes-no-idnotknow-code-system",
+          "code" : "N",
+          "display" : "No",
+          "designation" : [{
+            "language" : "es",
+            "value" : "No"
+          }]
+        },
+        {
+          "system" : "http://example.org/CodeSystem/yes-no-idnotknow-code-system",
+          "code" : "UNK",
+          "display" : "I do not know",
+          "designation" : [{
+            "language" : "es",
+            "value" : "No lo sé"
+          }]
+        }]
+      }
+    }
+  }]
+}

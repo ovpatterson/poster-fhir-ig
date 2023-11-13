@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Questionnaire xmlns="http://hl7.org/fhir">
+  <id value="209990-9"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The linkId for the item">LinkId</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the itemcan appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.example.com/Questionnaire/209990-9#1.0.0</td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" id="item.1" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Group" class="hierarchy"/> 1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Onboarding Survey</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" id="item.1.2" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="Group" class="hierarchy"/> 1.2</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">null</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" id="item.1.2.348084" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Display" class="hierarchy"/> 1.2.348084</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&lt;b&gt;Please confirm the following information.&lt;/b&gt;</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" id="item.1.2.348085" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="String" class="hierarchy"/> 1.2.348085</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What's your name?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" id="item.1.2.348086" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="String" class="hierarchy"/> 1.2.348086</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What's your preferred phone number?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)" id="item.1.2.348087" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-date.png" alt="." style="background-color: white; background-color: inherit" title="Date" class="hierarchy"/> 1.2.348087</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What's your date of birth?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-date">date</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck011.png)" id="item.1.4" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Group" class="hierarchy"/> 1.4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">null</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" id="item.1.4.348088" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: white; background-color: inherit" title="Display" class="hierarchy"/> 1.4.348088</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&lt;b&gt;Please complete the following questions.&lt;/b&gt;</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" id="item.1.4.348089" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="String" class="hierarchy"/> 1.4.348089</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What's your current home address?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" id="item.1.4.348090" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> 1.4.348090</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What was your sex assigned at birth?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.1.4.348090">2 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" id="item.1.4.348091" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> 1.4.348091</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">What is your gender identity?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.1.4.348091">7 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0110.png)" id="item.1.4.348092" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> 1.4.348092</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Are you of Hispanic, Latino/Latina, or Spanish origin?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.1.4.348092">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0100.png)" id="item.1.4.348093" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> 1.4.348093</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Which race(s) do you identify with? Please select all that apply.</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.1.4.348093">6 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck001.png)" id="item.1.6" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-group.png" alt="." style="background-color: white; background-color: inherit" title="Group" class="hierarchy"/> 1.6</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">null</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-group">group</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" id="item.1.6.348094" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-display.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Display" class="hierarchy"/> 1.6.348094</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">&lt;b&gt;What is your health and healthcare like?&lt;/b&gt;</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-display">display</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" id="item.1.6.348095" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> 1.6.348095</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Do you have a history of smoking?  This is defined as smoking more than 5 packs of cigarettes in your lifetime.</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.1.6.348095">3 options</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" id="item.1.6.348096" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> 1.6.348096</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Do you currently smoke cigarettes?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.1.6.348096">3 options</a><br/>Expressions: <ul><li style="font-size: 11px"><a href="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression">Enable When</a>: <code>(%resource.repeat(item).where(linkId = '1.6.348095').answer.valueCoding.code = 1)</code></li></ul></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" id="item.1.6.348097" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-quantity.png" alt="." style="background-color: white; background-color: inherit" title="Quantity" class="hierarchy"/> 1.6.348097</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">How many cigarettes do you smoke a day?</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-quantity">quantity</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Expressions: <ul><li style="font-size: 11px"><a href="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression">Enable When</a>: <code>(%resource.repeat(item).where(linkId = '1.6.348096').answer.valueCoding.code = 1)</code></li></ul></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" id="item.1.6.348098" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Coding" class="hierarchy"/> 1.6.348098</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Which hospitals or healthcare facilities have you gone to for your medical care &lt;b&gt;in the last five years&lt;/b&gt;?</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" id="item.1.6.348099" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="Coding" class="hierarchy"/> 1.6.348099</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Check this box only if the hospital or healthcare facility was &lt;b&gt;not available&lt;/b&gt; in the previous question.</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.1.6.348099">1 option</a></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0010.png)" id="item.1.6.348100" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="String" class="hierarchy"/> 1.6.348100</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Please specify the hospital(s) or healthcare facility/facilities that you've gone to for your medical care &lt;b&gt;in the last five years&lt;/b&gt;.&lt;br&gt;&lt;i&gt;Separate each hospital or healthcare facility with a semicolon. For example: Hospital A; Hospital B; Hospital C.&lt;/i&gt;</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Expressions: <ul><li style="font-size: 11px"><a href="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression">Enable When</a>: <code>(%resource.repeat(item).where(linkId = '1.6.348099').answer.valueCoding.code = 1)</code></li></ul></td></tr>
+<tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0000.png)" id="item.1.6.348101" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-string.png" alt="." style="background-color: white; background-color: inherit" title="String" class="hierarchy"/> 1.6.348101</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Which doctors or healthcare providers have you seen regularly for your medical care &lt;b&gt;in the last five years&lt;/b&gt;?&lt;br&gt; &lt;i&gt;Please specify the first and last name of each provider, as well as the city and state they're located. Separate each provider's information with a semicolon. For example: Dr. Jane Smith, San Francisco, CA; Dr. John Doe, San Mateo, CA.&lt;/i&gt;</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/codesystem-item-type.html#item-type-string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Option Sets</b></p><a name="opt-item.1.4.348090"> </a><p><b>Answer options for 1.4.348090</b></p><ul><li style="font-size: 11px">csp:Question.Option.value:1.4.348090#1 (&quot;Female&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348090#2 (&quot;Male&quot;)</li></ul><a name="opt-item.1.4.348091"> </a><p><b>Answer options for 1.4.348091</b></p><ul><li style="font-size: 11px">csp:Question.Option.value:1.4.348091#1 (&quot;Female&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348091#2 (&quot;Female-to-male (FTM)/transgender male/trans man&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348091#3 (&quot;Gender non-conforming&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348091#4 (&quot;Male&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348091#5 (&quot;Male-to-female (MTF)/transgender woman/trans woman&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348091#6 (&quot;Other&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348091#7 (&quot;Chose not to disclose&quot;)</li></ul><a name="opt-item.1.4.348092"> </a><p><b>Answer options for 1.4.348092</b></p><ul><li style="font-size: 11px">csp:Question.Option.value:1.4.348092#1 (&quot;Yes&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348092#2 (&quot;No&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348092#3 (&quot;I don't know&quot;)</li></ul><a name="opt-item.1.4.348093"> </a><p><b>Answer options for 1.4.348093</b></p><ul><li style="font-size: 11px">csp:Question.Option.value:1.4.348093#1 (&quot;American Indian or Alaska Native&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348093#2 (&quot;Asian&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348093#3 (&quot;Black or African American&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348093#4 (&quot;Native Hawaiian or Other Pacific Islander&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348093#5 (&quot;White&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.4.348093#6 (&quot;Other&quot;)</li></ul><a name="opt-item.1.6.348095"> </a><p><b>Answer options for 1.6.348095</b></p><ul><li style="font-size: 11px">csp:Question.Option.value:1.6.348095#1 (&quot;Yes&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.6.348095#2 (&quot;No&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.6.348095#3 (&quot;Prefer not to answer&quot;)</li></ul><a name="opt-item.1.6.348096"> </a><p><b>Answer options for 1.6.348096</b></p><ul><li style="font-size: 11px">csp:Question.Option.value:1.6.348096#1 (&quot;Yes&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.6.348096#2 (&quot;No&quot;)</li><li style="font-size: 11px">csp:Question.Option.value:1.6.348096#3 (&quot;Prefer not to answer&quot;)</li></ul><a name="opt-item.1.6.348099"> </a><p><b>Answer options for 1.6.348099</b></p><ul><li style="font-size: 11px">csp:Question.Option.value:1.6.348099#1 (&quot;Hospital or healthcare facility not available in previous question&quot;)</li></ul></div>
+  </text>
+  <url value="http://fhir.example.com/Questionnaire/209990-9"/>
+  <identifier>
+    <system value="csp:Questionnaire.oid"/>
+    <value value="OBQ"/>
+  </identifier>
+  <version value="1.0.0"/>
+  <title value="Onboarding Survey"/>
+  <status value="active"/>
+  <date value="2023-10-16T15:43:11-05:00"/>
+  <publisher value="Olga Patterson"/>
+  <contact>
+    <name value="Olga Patterson"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://verily.com/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="opatterson@verily.com"/>
+    </telecom>
+  </contact>
+  <item>
+    <linkId value="1"/>
+    <text value="Onboarding Survey"/>
+    <type value="group"/>
+    <repeats value="false"/>
+    <item>
+      <linkId value="1.2"/>
+      <type value="group"/>
+      <repeats value="false"/>
+      <item>
+        <linkId value="1.2.348084"/>
+        <text value="&lt;b&gt;Please confirm the following information.&lt;/b&gt;"/>
+        <type value="display"/>
+      </item>
+      <item>
+        <linkId value="1.2.348085"/>
+        <text value="What's your name?"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <linkId value="1.2.348086"/>
+        <text value="What's your preferred phone number?"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <linkId value="1.2.348087"/>
+        <text value="What's your date of birth?"/>
+        <type value="date"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+    <item>
+      <linkId value="1.4"/>
+      <type value="group"/>
+      <repeats value="false"/>
+      <item>
+        <linkId value="1.4.348088"/>
+        <text value="&lt;b&gt;Please complete the following questions.&lt;/b&gt;"/>
+        <type value="display"/>
+      </item>
+      <item>
+        <linkId value="1.4.348089"/>
+        <text value="What's your current home address?"/>
+        <type value="string"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="radio-button"/>
+              <display value="Radio Button"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="1.4.348090"/>
+        <text value="What was your sex assigned at birth?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348090"/>
+            <code value="1"/>
+            <display value="Female"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348090"/>
+            <code value="2"/>
+            <display value="Male"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="radio-button"/>
+              <display value="Radio Button"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="1.4.348091"/>
+        <text value="What is your gender identity?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348091"/>
+            <code value="1"/>
+            <display value="Female"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348091"/>
+            <code value="2"/>
+            <display value="Female-to-male (FTM)/transgender male/trans man"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348091"/>
+            <code value="3"/>
+            <display value="Gender non-conforming"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348091"/>
+            <code value="4"/>
+            <display value="Male"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348091"/>
+            <code value="5"/>
+            <display value="Male-to-female (MTF)/transgender woman/trans woman"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348091"/>
+            <code value="6"/>
+            <display value="Other"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348091"/>
+            <code value="7"/>
+            <display value="Chose not to disclose"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="radio-button"/>
+              <display value="Radio Button"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="1.4.348092"/>
+        <text value="Are you of Hispanic, Latino/Latina, or Spanish origin?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348092"/>
+            <code value="1"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348092"/>
+            <code value="2"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348092"/>
+            <code value="3"/>
+            <display value="I don't know"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="check-box"/>
+              <display value="Check-box"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="1.4.348093"/>
+        <text value="Which race(s) do you identify with? Please select all that apply."/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="true"/>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348093"/>
+            <code value="1"/>
+            <display value="American Indian or Alaska Native"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348093"/>
+            <code value="2"/>
+            <display value="Asian"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348093"/>
+            <code value="3"/>
+            <display value="Black or African American"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348093"/>
+            <code value="4"/>
+            <display value="Native Hawaiian or Other Pacific Islander"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348093"/>
+            <code value="5"/>
+            <display value="White"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.4.348093"/>
+            <code value="6"/>
+            <display value="Other"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+    </item>
+    <item>
+      <linkId value="1.6"/>
+      <type value="group"/>
+      <repeats value="false"/>
+      <item>
+        <linkId value="1.6.348094"/>
+        <text value="&lt;b&gt;What is your health and healthcare like?&lt;/b&gt;"/>
+        <type value="display"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="radio-button"/>
+              <display value="Radio Button"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="1.6.348095"/>
+        <text value="Do you have a history of smoking?  This is defined as smoking more than 5 packs of cigarettes in your lifetime."/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.6.348095"/>
+            <code value="1"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.6.348095"/>
+            <code value="2"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.6.348095"/>
+            <code value="3"/>
+            <display value="Prefer not to answer"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="radio-button"/>
+              <display value="Radio Button"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression">
+          <valueExpression>
+            <language value="text/fhirpath"/>
+            <expression value="(%resource.repeat(item).where(linkId = '1.6.348095').answer.valueCoding.code = 1)"/>
+          </valueExpression>
+        </extension>
+        <linkId value="1.6.348096"/>
+        <text value="Do you currently smoke cigarettes?"/>
+        <type value="choice"/>
+        <required value="true"/>
+        <repeats value="false"/>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.6.348096"/>
+            <code value="1"/>
+            <display value="Yes"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.6.348096"/>
+            <code value="2"/>
+            <display value="No"/>
+          </valueCoding>
+        </answerOption>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.6.348096"/>
+            <code value="3"/>
+            <display value="Prefer not to answer"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression">
+          <valueExpression>
+            <language value="text/fhirpath"/>
+            <expression value="(%resource.repeat(item).where(linkId = '1.6.348096').answer.valueCoding.code = 1)"/>
+          </valueExpression>
+        </extension>
+        <linkId value="1.6.348097"/>
+        <text value="How many cigarettes do you smoke a day?"/>
+        <type value="quantity"/>
+        <required value="true"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <extension url="csp:Question.AutocompleteDataSource">
+          <valueString value="HOSPITALS"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="autocomplete"/>
+              <display value="Auto-complete"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="1.6.348098"/>
+        <text value="Which hospitals or healthcare facilities have you gone to for your medical care &lt;b&gt;in the last five years&lt;/b&gt;?"/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="true"/>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://hl7.org/fhir/questionnaire-item-control"/>
+              <code value="check-box"/>
+              <display value="Check-box"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <linkId value="1.6.348099"/>
+        <text value="Check this box only if the hospital or healthcare facility was &lt;b&gt;not available&lt;/b&gt; in the previous question."/>
+        <type value="choice"/>
+        <required value="false"/>
+        <repeats value="true"/>
+        <answerOption>
+          <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+            <valueDecimal value="0"/>
+          </extension>
+          <valueCoding>
+            <system value="csp:Question.Option.value:1.6.348099"/>
+            <code value="1"/>
+            <display value="Hospital or healthcare facility not available in previous question"/>
+          </valueCoding>
+        </answerOption>
+      </item>
+      <item>
+        <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-enableWhenExpression">
+          <valueExpression>
+            <language value="text/fhirpath"/>
+            <expression value="(%resource.repeat(item).where(linkId = '1.6.348099').answer.valueCoding.code = 1)"/>
+          </valueExpression>
+        </extension>
+        <linkId value="1.6.348100"/>
+        <text value="Please specify the hospital(s) or healthcare facility/facilities that you've gone to for your medical care &lt;b&gt;in the last five years&lt;/b&gt;.&lt;br&gt;&lt;i&gt;Separate each hospital or healthcare facility with a semicolon. For example: Hospital A; Hospital B; Hospital C.&lt;/i&gt;"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+      <item>
+        <linkId value="1.6.348101"/>
+        <text value="Which doctors or healthcare providers have you seen regularly for your medical care &lt;b&gt;in the last five years&lt;/b&gt;?&lt;br&gt; &lt;i&gt;Please specify the first and last name of each provider, as well as the city and state they're located. Separate each provider's information with a semicolon. For example: Dr. Jane Smith, San Francisco, CA; Dr. John Doe, San Mateo, CA.&lt;/i&gt;"/>
+        <type value="string"/>
+        <required value="false"/>
+        <repeats value="false"/>
+      </item>
+    </item>
+  </item>
+</Questionnaire>
